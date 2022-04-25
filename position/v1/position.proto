@@ -69,7 +69,7 @@ service PositionService {
 	}
 	rpc GetOwnedDevicesPositions(GetOwnedDevicesPositionsRequest) returns (GetOwnedDevicesPositionsResponse) {
 		option (google.api.http) = {
-			get: "/my-trackers"
+			get: "/devices"
 		};
 		option (grpc.gateway.protoc_gen_openapiv2.options.openapiv2_operation) = {
 			security: {
